@@ -1,9 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './screens/HomeScreen';
-import CarList from './screens/CarList';
+import HomeScreen from './src/screens/HomeScreen';
+import CarList from './src/screens/CarList';
+import CarImage from './src/screens/CarImage';
 
 const App = () => {
 
@@ -14,6 +13,7 @@ return (
     <Stack.Navigator>
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="CarList" component={CarList} />
+      <Stack.Screen name="CarImage" component={CarImage} />
     </Stack.Navigator>
   </NavigationContainer>
 )
@@ -22,14 +22,6 @@ return (
 
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 
 export default App
