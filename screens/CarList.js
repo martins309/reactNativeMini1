@@ -16,7 +16,7 @@ const CarList = () => {
             data={cars}
             renderItem={({ item }) => {
                 return (
-                    <Text>{car.name}</Text>
+                    <Text>{item.name}</Text>
                 )
             }}
             />

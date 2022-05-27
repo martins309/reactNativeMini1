@@ -1,13 +1,23 @@
 import React from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, View, StyleSheet, Button } from 'react-native'
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
     return (
-        <Text> Welcome Home Hoe</Text>
+        <View>
+             <Text style={styles.style}> Welcome Home Hoe</Text>
+             <Button title="MyCars ;)" onPress={() => navigation.navigate("CarList")}/>
+        </View>
+       
     )
 }
 
 const styles = StyleSheet.create({
+    style: {
+        fontSize: 20,
+        flex: 1,
+        left: 110,
+        color: 'blue'
+    }
 
 })
 
