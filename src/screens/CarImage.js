@@ -24,7 +24,7 @@ const CarImage = () => {
                />
                <CarImageDetails 
                title="zonda"
-               source={require('../screens/Images/zonda.jpg')}
+               source={require('../screens/Images/zonda.png')}
                year={2022}
                />
             </View>
