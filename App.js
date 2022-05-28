@@ -5,21 +5,18 @@ import CarList from './src/screens/CarList';
 import CarImage from './src/screens/CarImage';
 
 const App = () => {
-
+  
 const Stack = createNativeStackNavigator()
 
 return (
   <NavigationContainer>
     <Stack.Navigator>
-      <Stack.Screen name="HomeScreen" component={HomeScreen} />
-      <Stack.Screen name="CarList" component={CarList} />
-      <Stack.Screen name="CarImage" component={CarImage} />
+      <Stack.Screen name= "HomeScreen" component={HomeScreen} />
+      <Stack.Screen name= "CarList" component={CarList} />
+      <Stack.Screen name= "CarImage" component={CarImage} />
     </Stack.Navigator>
   </NavigationContainer>
 )
-
-
-
 }
 
 
